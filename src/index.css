@@ -107,7 +107,7 @@ button, input, textarea, select {
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 60px 0;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -207,15 +207,15 @@ button, input, textarea, select {
 .portfolio-split-layout {
   display: grid;
   grid-template-columns: 360px 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: flex-start;
-  padding-top: 120px;
+  padding-top: 80px;
   position: relative;
 }
 
 .portfolio-left-pane {
   position: sticky;
-  top: 120px;
+  top: 80px;
   height: fit-content;
   z-index: 10;
 }
@@ -228,7 +228,7 @@ button, input, textarea, select {
 
 /* Spacing Adjustments in Split Column */
 .portfolio-right-pane .section-padding {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .portfolio-right-pane .hero-section {
