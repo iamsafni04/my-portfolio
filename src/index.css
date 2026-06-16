@@ -250,13 +250,12 @@ button, input, textarea, select {
   }
 }
 
-/* Shift layout slightly to the left on desktop screens */
+/* Center layout on desktop screens */
 @media (min-width: 1200px) {
   .container, 
   .header-container {
     max-width: 1440px;
-    margin-left: 6%;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 
