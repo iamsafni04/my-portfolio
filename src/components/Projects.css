@@ -1,0 +1,214 @@
+.projects-section {
+  background-color: var(--bg-primary);
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-tagline {
+  font-family: var(--font-accent);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-lime);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+  display: block;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.project-image-wrapper:hover .project-image {
+  transform: scale(1.04);
+}
+
+.project-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+}
+
+.project-image-wrapper:hover .project-hover-overlay {
+  opacity: 1;
+}
+
+.project-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition-normal);
+  transform: translateY(10px);
+}
+
+.project-image-wrapper:hover .project-view-btn {
+  transform: translateY(0);
+}
+
+.project-info {
+  padding: 24px 0 0 0;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-category {
+  font-family: var(--font-accent);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.project-tag {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.project-title a:hover {
+  color: var(--accent-lime);
+}
+
+.project-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .project-image-wrapper {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-image-wrapper {
+    height: 240px;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.project-actions {
+  margin-top: 16px;
+}
+
+.btn-download-apk {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-accent);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-lime);
+  background-color: rgba(197, 255, 65, 0.05);
+  border: 1px solid rgba(197, 255, 65, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: var(--transition-normal);
+}
+
+.btn-download-apk:hover {
+  background-color: var(--accent-lime);
+  color: var(--bg-primary);
+  border-color: var(--accent-lime);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 255, 65, 0.15);
+}
+
+.download-icon {
+  transition: transform var(--transition-fast);
+}
+
+.btn-download-apk:hover .download-icon {
+  transform: translateY(1px);
+}

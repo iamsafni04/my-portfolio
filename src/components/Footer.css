@@ -1,0 +1,31 @@
+.footer-section {
+  padding: 40px 0;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: var(--font-accent);
+}
+
+.footer-copy {
+  font-weight: 400;
+}
+
+.footer-credits {
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .footer-layout {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,114 @@
+.service-cards-section {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+}
+
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  min-height: 240px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.card-header-icon {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.01);
+  color: var(--text-secondary);
+  transition: var(--transition-normal);
+}
+
+.service-card:hover .card-header-icon {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.arrow-icon {
+  transition: var(--transition-normal);
+}
+
+.service-card:hover .arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+.card-body {
+  margin-top: auto;
+}
+
+.card-subtitle {
+  font-family: var(--font-accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Card Themes */
+.card-lime:hover {
+  border-color: var(--accent-lime);
+  background-color: var(--card-hover-bg);
+  box-shadow: 0 10px 30px rgba(197, 255, 65, 0.05);
+}
+
+.card-lime:hover .card-title {
+  color: var(--accent-lime);
+}
+
+.card-orange:hover {
+  border-color: var(--accent-orange);
+  background-color: var(--card-hover-bg);
+  box-shadow: 0 10px 30px rgba(244, 108, 56, 0.05);
+}
+
+.card-orange:hover .card-title {
+  color: var(--accent-orange);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .service-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    min-height: 200px;
+    padding: 30px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+}
