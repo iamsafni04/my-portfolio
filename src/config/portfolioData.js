@@ -43,7 +43,7 @@ export const portfolioData = {
       tags: ["POS", "Loyalty System", "SMS Gateway", "Auth"],
       imageUrl: "/projects/billngo.site.png",
       link: "https://billngo.site",
-      apkUrl: "/billngo-pos-companion.apk"
+      apkUrl: "https://github.com/iamsafni04/my-portfolio/releases/download/v1.0.0/billngo-pos-companion.apk"
     },
     {
       id: "ceylontrips",
