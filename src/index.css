@@ -259,4 +259,15 @@ button, input, textarea, select {
   }
 }
 
+/* Mobile-specific global container adjustments */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
 

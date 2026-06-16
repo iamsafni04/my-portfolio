@@ -226,6 +226,14 @@
 }
 
 @media (max-width: 576px) {
+  .contact-heading {
+    font-size: 32px;
+  }
+
+  .contact-layout {
+    gap: 32px;
+  }
+
   .contact-form-container {
     padding: 24px;
     border-radius: 16px;
